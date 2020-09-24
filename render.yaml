@@ -1,0 +1,6 @@
+services:
+- type: web
+  name: My website
+  env: static
+  buildCommand: bin/mkws $RENDER_EXTERNAL_URL
+  staticPublishPath: .

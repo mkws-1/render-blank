@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang=${LANG%%_*}>
+
+<head>
+
+<title>My website</title>
+
+<meta charset=${LANG##*.}>
+<meta name=viewport content='width=device-width'>
+
+<link rel=icon href=favicon.ico type=image/x-icon>
+<link rel=stylesheet
+href=s.css?$(lmt -f '%Y-%m-%dT%H:%M:%SZ' s.css | cut -d' ' -f1)>
+
+</head>
+
+<body>
+
+#!
+pp "$1"
+#!
+
+</body>
+
+</html>
